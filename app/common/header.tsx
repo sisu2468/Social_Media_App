@@ -2,11 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link'
-import { usePathname } from "next/navigation"; // Import usePathname
 import { FaHome, FaUser, FaBell, FaComments, FaGlobe, FaQuestionCircle, FaSearch } from 'react-icons/fa';
 import Navbar from './navbar';
 
-const exp = require("constants")
 const languages = [
     { code: 'ARB', name: 'العربية', abbreviation: 'ARB' },
     { code: 'ARG', name: 'Español (Argentina)', abbreviation: 'ARG' },
@@ -54,11 +52,6 @@ const Header = () => {
     const [selectlanguage, setSelectLanguage] = useState(false);
     const [ curlang, setCurLang ] = useState('EN')
     const [ braille, setBraille ] = useState(false)
-    const pathname = usePathname(); // Get the current route
-    
-    // List of routes where the sidebars should NOT appear
-    const hideSidebars = ["/signin", "/signup"]; // Add other routes as needed
-    const isSidebarHidden = hideSidebars.includes(pathname);
     
     return (
         <header className='bg-[#30305b] h-[55px] px-3 fixed z-40 w-full'>

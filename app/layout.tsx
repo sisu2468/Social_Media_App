@@ -2,10 +2,7 @@ import React, { useEffect } from 'react';
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from '@/app/common/header';
-import FooterBar from '@/app/common/footer'
 import "./globals.css";
-import LeftSidebar from '@/app/common/leftside/leftsidebar';
-import RightSideBar from '@/app/common/rightside/rightsidebar';
 
 export const metadata: Metadata = {
   title: "Uamaup ",
@@ -24,14 +21,13 @@ export default function RootLayout({
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet" />
       </head>
       <body>
-        <Header />
+        {/* <Header /> */}
         <div className="flex">
-          <LeftSidebar />
+          {/* <LeftSidebar /> */}
           {children}
-          <RightSideBar />
+          {/* <RightSideBar /> */}
         </div>
         <footer>
-          <FooterBar />
         </footer>
       </body>
     </html>
