@@ -63,7 +63,7 @@ const faqSvg = (
 
 const LeftSidebar = () => {
     return (
-        <div className="w-[70px] pt-8 bg-white fixed h-full top-12">
+        <div className="w-[70px] pt-8 bg-white fixed h-full top-12 border-r-1 border-[#ffffff1a]">
             <ul className="flex flex-col items-center gap-4">
                 <li
                     className="bg-[#2b2b50] rounded-full flex items-center justify-center p-2 border-2 border-transparent hover:border-gray-600 cursor-pointer box-border"

@@ -1,6 +1,6 @@
 import { FaSignInAlt } from "react-icons/fa"; // Import the icon
 import { FaCheckCircle, FaEdit, FaUser } from 'react-icons/fa';  // Add these imports at the top
-import SignInHeader from "@/app/auth/sign-header";
+import SignInHeader from "@/app/common/sign/sign-header";
 import Image from "next/image";
 
 export default function SignOutPage() {
